@@ -10,93 +10,133 @@ const USER_AGENT =
 const PRESETS = {
   treat: {
     headline: (name) => `${name} REFUSES TO GIVE TREAT AGAIN!`,
-    ticker: (name) => `FRIENDS DEMAND EMERGENCY MEETING • SOURCES CONFIRM ${name}'S WALLET IS STILL FULL • NO MERCY`
+    ticker: (name) => `${name} REFUSES TO GIVE TREAT AGAIN • FRIENDS DEMAND EMERGENCY MEETING • WALLET STILL FULL`
   },
   shadi: {
-    headline: (name) => `EXCLUSIVE: ${name}'S SECRET NIKAH CONFIRMED!`,
-    ticker: (name) => `INVITATION CARDS PRINTED IN SECRET • ${name} DENIES ALL ALLEGATIONS • FULL REPORT COMING SOON`
+    headline: (name) => `${name} KA SECRET NIKAH CONFIRMED`,
+    ticker: (name) => `${name} KA SECRET NIKAH CONFIRMED • INVITATION CARDS READY • FULL COVERAGE LIVE`
   },
   exam: {
-    headline: (name) => `SHOCKING: ${name} OPENED BOOK 1 HOUR BEFORE EXAM!`,
-    ticker: (name) => `TEACHERS STUNNED • MIRACLE OR LAST-MINUTE PANIC? • ${name} DEMANDS EASY PAPER`
+    headline: (name) => `${name} OPENED BOOK 1 HOUR BEFORE EXAM`,
+    ticker: (name) => `${name} OPENED BOOK 1 HOUR BEFORE EXAM • TEACHERS STUNNED • LAST MINUTE MIRACLE`
   },
   chai: {
-    headline: (name) => `ALERT: ${name} CONSUMED 12 CUPS OF CHAI TODAY!`,
-    ticker: (name) => `CAFFEINE LEVELS AT RECORD HIGH • ${name} RUNNING ON PURE CHAI • SLEEP CANCELLED TONIGHT`
+    headline: (name) => `${name} DRANK 12 CUPS OF CHAI TODAY`,
+    ticker: (name) => `${name} DRANK 12 CUPS OF CHAI TODAY • CAFFEINE OVERLOAD • NO SLEEP TONIGHT`
   },
   missing: {
-    headline: (name) => `URGENT: ${name} SEEN ONLINE, STILL NO REPLY!`,
-    ticker: (name) => `BLUE TICKS CONFIRMED • SEARCH TEAM DISPATCHED • ${name} BLAMES BAD NETWORK SIGNAL`
+    headline: (name) => `${name} SEEN ONLINE, STILL NO REPLY`,
+    ticker: (name) => `${name} SEEN ONLINE, STILL NO REPLY • BLUE TICKS CONFIRMED • SEARCH TEAM ON DUTY`
   }
 };
 
 const THEMES = {
   classic: {
-    bgDark: "#070b12",
-    bgAccent: "#141e30",
-    primary: "#dc2626",
-    primaryDark: "#7f1d1d",
-    secondary: "#facc15",
-    textMain: "#ffffff",
-    textSub: "#e2e8f0",
-    tickerBg: "#facc15",
-    tickerText: "#090d16",
-    border: "#ef4444"
+    bgTop: "#131c2b",
+    bgBot: "#080c14",
+    liveBg: "#eab308",
+    liveText: "#090d16",
+    viewerBg: "#111622",
+    viewerText: "#f8fafc",
+    channelBg: "#111622",
+    channelTitle: "#ffffff",
+    channelSub: "#cbd5e1",
+    tagBg: "#eab308",
+    tagText: "#090d16",
+    boxBg: "#0d111a",
+    boxBorder: "#eab308",
+    accentBar: "#ef4444",
+    headlineColor: "#ffffff",
+    creditColor: "#e2e8f0",
+    tickerBg: "#dc2626",
+    tickerText: "#ffffff"
   },
   cyber: {
-    bgDark: "#040b09",
-    bgAccent: "#081f18",
-    primary: "#10b981",
-    primaryDark: "#064e3b",
-    secondary: "#38bdf8",
-    textMain: "#ecfdf5",
-    textSub: "#a7f3d0",
-    tickerBg: "#10b981",
-    tickerText: "#03120c",
-    border: "#34d399"
+    bgTop: "#061b15",
+    bgBot: "#030b09",
+    liveBg: "#10b981",
+    liveText: "#03120c",
+    viewerBg: "#071612",
+    viewerText: "#ecfdf5",
+    channelBg: "#071612",
+    channelTitle: "#34d399",
+    channelSub: "#a7f3d0",
+    tagBg: "#10b981",
+    tagText: "#03120c",
+    boxBg: "#06120f",
+    boxBorder: "#10b981",
+    accentBar: "#38bdf8",
+    headlineColor: "#ffffff",
+    creditColor: "#a7f3d0",
+    tickerBg: "#059669",
+    tickerText: "#ffffff"
   },
   alert: {
-    bgDark: "#0c0a04",
-    bgAccent: "#241b05",
-    primary: "#eab308",
-    primaryDark: "#713f12",
-    secondary: "#ef4444",
-    textMain: "#fefce8",
-    textSub: "#fde68a",
-    tickerBg: "#ef4444",
-    tickerText: "#ffffff",
-    border: "#facc15"
+    bgTop: "#1f1606",
+    bgBot: "#0b0803",
+    liveBg: "#f59e0b",
+    liveText: "#090d16",
+    viewerBg: "#141008",
+    viewerText: "#fefce8",
+    channelBg: "#141008",
+    channelTitle: "#fbbf24",
+    channelSub: "#fde68a",
+    tagBg: "#ef4444",
+    tagText: "#ffffff",
+    boxBg: "#120e07",
+    boxBorder: "#f59e0b",
+    accentBar: "#ef4444",
+    headlineColor: "#ffffff",
+    creditColor: "#fde68a",
+    tickerBg: "#b91c1c",
+    tickerText: "#ffffff"
   },
   blue: {
-    bgDark: "#050d1a",
-    bgAccent: "#0b2242",
-    primary: "#0284c7",
-    primaryDark: "#0c4a6e",
-    secondary: "#38bdf8",
-    textMain: "#f8fafc",
-    textSub: "#bae6fd",
-    tickerBg: "#38bdf8",
-    tickerText: "#041322",
-    border: "#38bdf8"
+    bgTop: "#091e3a",
+    bgBot: "#040d1a",
+    liveBg: "#38bdf8",
+    liveText: "#041322",
+    viewerBg: "#091526",
+    viewerText: "#f8fafc",
+    channelBg: "#091526",
+    channelTitle: "#7dd3fc",
+    channelSub: "#bae6fd",
+    tagBg: "#0284c7",
+    tagText: "#ffffff",
+    boxBg: "#071120",
+    boxBorder: "#38bdf8",
+    accentBar: "#facc15",
+    headlineColor: "#ffffff",
+    creditColor: "#bae6fd",
+    tickerBg: "#0369a1",
+    tickerText: "#ffffff"
   },
   drama: {
-    bgDark: "#120614",
-    bgAccent: "#290c2e",
-    primary: "#db2777",
-    primaryDark: "#831843",
-    secondary: "#c084fc",
-    textMain: "#fdf2f8",
-    textSub: "#f5d0fe",
-    tickerBg: "#f472b6",
-    tickerText: "#1b041c",
-    border: "#ec4899"
+    bgTop: "#270a24",
+    bgBot: "#0f040e",
+    liveBg: "#ec4899",
+    liveText: "#ffffff",
+    viewerBg: "#170816",
+    viewerText: "#fdf2f8",
+    channelBg: "#170816",
+    channelTitle: "#f472b6",
+    channelSub: "#f5d0fe",
+    tagBg: "#db2777",
+    tagText: "#ffffff",
+    boxBg: "#140713",
+    boxBorder: "#f472b6",
+    accentBar: "#c084fc",
+    headlineColor: "#ffffff",
+    creditColor: "#f5d0fe",
+    tickerBg: "#be185d",
+    tickerText: "#ffffff"
   }
 };
 
 const SIZES = {
-  tv: { width: 1280, height: 720, label: "tv" },
-  square: { width: 1080, height: 1080, label: "square" },
-  status: { width: 1080, height: 1920, label: "status" }
+  tv: { width: 1280, height: 720 },
+  square: { width: 1080, height: 1080 },
+  status: { width: 1080, height: 1920 }
 };
 
 function escapeXml(unsafe) {
@@ -110,14 +150,16 @@ function escapeXml(unsafe) {
 
 function getPktTimeString() {
   try {
-    return new Intl.DateTimeFormat("en-US", {
-      timeZone: "Asia/Karachi",
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true
-    }).format(new Date()) + " PKT";
+    return (
+      new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Karachi",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+      }).format(new Date()) + " PKT"
+    );
   } catch {
-    return "LIVE PKT";
+    return "11:30 AM PKT";
   }
 }
 
@@ -152,9 +194,7 @@ function wrapText(text, maxCharsPerLine, maxLines = 2) {
 function normalizeDataUri(rawInput) {
   if (!rawInput || typeof rawInput !== "string") return null;
   const trimmed = rawInput.trim();
-  if (trimmed.startsWith("data:image/")) {
-    return trimmed;
-  }
+  if (trimmed.startsWith("data:image/")) return trimmed;
   const cleanBase64 = trimmed.replace(/\s+/g, "");
   if (/^[A-Za-z0-9+/=]{120,}$/.test(cleanBase64)) {
     return `data:image/jpeg;base64,${cleanBase64}`;
@@ -172,9 +212,7 @@ async function fetchImageAsDataUri(rawUrl) {
   try {
     const parsed = new URL(cleanUrl);
     const host = parsed.hostname.toLowerCase();
-    if (host === "localhost" || host === "127.0.0.1" || host === "0.0.0.0") {
-      return null;
-    }
+    if (host === "localhost" || host === "127.0.0.1" || host === "0.0.0.0") return null;
 
     const res = await fetch(parsed.href, {
       signal: controller.signal,
@@ -191,8 +229,7 @@ async function fetchImageAsDataUri(rawUrl) {
       return null;
     }
 
-    const base64 = Buffer.from(arrayBuffer).toString("base64");
-    return `data:${contentType};base64,${base64}`;
+    return `data:${contentType};base64,${Buffer.from(arrayBuffer).toString("base64")}`;
   } catch {
     return null;
   } finally {
@@ -201,16 +238,12 @@ async function fetchImageAsDataUri(rawUrl) {
 }
 
 async function parseJsonBody(req) {
-  if (req.body && typeof req.body === "object") {
-    return req.body;
-  }
+  if (req.body && typeof req.body === "object") return req.body;
   const chunks = [];
   let totalBytes = 0;
   for await (const chunk of req) {
     totalBytes += chunk.length;
-    if (totalBytes > 5_000_000) {
-      throw new Error("Request body exceeds 5MB limit.");
-    }
+    if (totalBytes > 5_000_000) throw new Error("Request body exceeds 5MB limit.");
     chunks.push(chunk);
   }
   if (chunks.length === 0) return {};
@@ -224,36 +257,44 @@ function buildNewsSvg(cfg) {
   const isVertical = height > width;
   const isSquare = width === height;
 
-  const maxChars = isVertical ? 22 : isSquare ? 26 : 34;
-  const lines = wrapText(cfg.headline, maxChars, 2);
-  const baseFontSize = isVertical ? 54 : isSquare ? 50 : 52;
-  const lineGap = Math.round(baseFontSize * 1.18);
+  const tickerH = isVertical ? 64 : 52;
+  const boxH = isVertical ? 190 : isSquare ? 156 : 138;
+  const tagH = 38;
+  const marginX = isVertical ? 36 : 44;
+  const boxW = width - marginX * 2;
 
-  const lowerHeight = isVertical ? 320 : isSquare ? 250 : 215;
-  const tickerHeight = isVertical ? 64 : 52;
-  const bannerTop = height - lowerHeight - tickerHeight;
-  const headlineStartY = bannerTop + (isVertical ? 128 : 112);
+  const boxY = height - tickerH - boxH - 22;
+  const tagY = boxY - tagH - 12;
+
+  const maxChars = isVertical ? 24 : isSquare ? 30 : 40;
+  const lines = wrapText(cfg.headline, maxChars, 2);
+  const fontSize = isVertical ? 48 : isSquare ? 44 : 46;
+  const lineGap = Math.round(fontSize * 1.18);
+  const textStartY =
+    lines.length === 1
+      ? boxY + Math.round(boxH / 2) + Math.round(fontSize * 0.34)
+      : boxY + Math.round(boxH * 0.44);
 
   const filterAttr = cfg.filter === "bw" ? `filter="url(#bwFilter)"` : "";
 
-  let photoLayer = `
-    <rect x="0" y="0" width="${width}" height="${height}" fill="url(#studioBg)"/>
-    <rect x="0" y="0" width="${width}" height="${height}" fill="url(#gridPattern)"/>
+  let bgMedia = `
+    <rect x="0" y="0" width="${width}" height="${height}" fill="url(#studioGrad)"/>
+    <rect x="0" y="0" width="${width}" height="${height}" fill="url(#gridDots)"/>
   `;
 
   if (cfg.img1 && cfg.img2) {
     const halfW = Math.floor(width / 2);
-    photoLayer = `
+    bgMedia = `
       <g ${filterAttr}>
         <image href="${escapeXml(cfg.img1)}" x="0" y="0" width="${halfW}" height="${height}" preserveAspectRatio="xMidYMid slice"/>
         <image href="${escapeXml(cfg.img2)}" x="${halfW}" y="0" width="${width - halfW}" height="${height}" preserveAspectRatio="xMidYMid slice"/>
       </g>
-      <line x1="${halfW}" y1="0" x2="${halfW}" y2="${height}" stroke="${t.secondary}" stroke-width="5"/>
-      <circle cx="${halfW}" cy="${Math.round(height * 0.42)}" r="34" fill="${t.primary}" stroke="#ffffff" stroke-width="3"/>
-      <text x="${halfW}" y="${Math.round(height * 0.42) + 9}" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="900">VS</text>
+      <line x1="${halfW}" y1="0" x2="${halfW}" y2="${height}" stroke="${t.boxBorder}" stroke-width="4"/>
+      <circle cx="${halfW}" cy="${Math.round(height * 0.44)}" r="30" fill="${t.accentBar}" stroke="#ffffff" stroke-width="3"/>
+      <text x="${halfW}" y="${Math.round(height * 0.44) + 8}" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="21" font-weight="900">VS</text>
     `;
   } else if (cfg.img1) {
-    photoLayer = `
+    bgMedia = `
       <g ${filterAttr}>
         <image href="${escapeXml(cfg.img1)}" x="0" y="0" width="${width}" height="${height}" preserveAspectRatio="xMidYMid slice"/>
       </g>
@@ -263,69 +304,66 @@ function buildNewsSvg(cfg) {
   const headlineSvg = lines
     .map(
       (line, idx) =>
-        `<text x="48" y="${headlineStartY + idx * lineGap}" fill="${t.textMain}" font-family="Arial, Helvetica, sans-serif" font-size="${baseFontSize}" font-weight="900" letter-spacing="0.5">${escapeXml(line)}</text>`
+        `<text x="${marginX + 28}" y="${textStartY + idx * lineGap}" fill="${t.headlineColor}" font-family="Arial, Helvetica, sans-serif" font-size="${fontSize}" font-weight="900" letter-spacing="0.4">${escapeXml(line)}</text>`
     )
     .join("\n    ");
 
-  const tickerText = `${cfg.ticker}   •   ${cfg.ticker}`;
+  const repeatedTicker = `${cfg.ticker} • ${cfg.ticker} • ${cfg.ticker}`;
+  const chBoxW = isVertical ? 320 : 350;
+  const chBoxX = width - chBoxW - 24;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="studioBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="${t.bgDark}"/>
-      <stop offset="100%" stop-color="${t.bgAccent}"/>
+    <linearGradient id="studioGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${t.bgTop}"/>
+      <stop offset="100%" stop-color="${t.bgBot}"/>
     </linearGradient>
-    <pattern id="gridPattern" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    <pattern id="gridDots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.08"/>
     </pattern>
-    <linearGradient id="bottomShade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0.05"/>
-      <stop offset="55%" stop-color="#05080f" stop-opacity="0.72"/>
-      <stop offset="100%" stop-color="#05080f" stop-opacity="0.96"/>
+    <linearGradient id="lowerFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="62%" stop-color="#04070d" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#04070d" stop-opacity="0.72"/>
     </linearGradient>
     <filter id="bwFilter">
       <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer>
-        <feFuncR type="linear" slope="1.15" intercept="-0.04"/>
-        <feFuncG type="linear" slope="1.15" intercept="-0.04"/>
-        <feFuncB type="linear" slope="1.15" intercept="-0.04"/>
-      </feComponentTransfer>
     </filter>
   </defs>
 
-  ${photoLayer}
+  ${bgMedia}
+  <rect x="0" y="0" width="${width}" height="${height}" fill="url(#lowerFade)"/>
 
-  <rect x="0" y="0" width="${width}" height="${height}" fill="url(#bottomShade)"/>
-  <rect x="8" y="8" width="${width - 16}" height="${height - 16}" rx="12" fill="none" stroke="${t.border}" stroke-opacity="0.55" stroke-width="2.5"/>
+  <!-- Top-Left LIVE Pill -->
+  <rect x="24" y="22" width="118" height="44" rx="10" fill="${t.liveBg}"/>
+  <circle cx="48" cy="44" r="7" fill="${t.liveText}"/>
+  <text x="65" y="51" fill="${t.liveText}" font-family="Arial, sans-serif" font-size="21" font-weight="900">${escapeXml(cfg.liveTag)}</text>
 
-  <!-- Top Left LIVE & Viewers -->
-  <rect x="32" y="28" width="116" height="44" rx="6" fill="${t.primary}"/>
-  <circle cx="56" cy="50" r="8" fill="#ffffff"/>
-  <text x="74" y="57" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="900">${escapeXml(cfg.liveTag)}</text>
+  <!-- Top-Left Viewers Pill -->
+  <rect x="154" y="22" width="114" height="44" rx="10" fill="${t.viewerBg}" fill-opacity="0.92" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.2"/>
+  <text x="211" y="51" text-anchor="middle" fill="${t.viewerText}" font-family="Arial, sans-serif" font-size="20" font-weight="800">👁 ${escapeXml(cfg.viewers)}</text>
 
-  <rect x="160" y="28" width="142" height="44" rx="6" fill="#090d16" fill-opacity="0.85" stroke="${t.border}" stroke-width="1.5"/>
-  <text x="231" y="57" text-anchor="middle" fill="${t.secondary}" font-family="Arial, sans-serif" font-size="20" font-weight="bold">👁 ${escapeXml(cfg.viewers)}</text>
+  <!-- Top-Right Channel & Location/Time Box -->
+  <rect x="${chBoxX}" y="22" width="${chBoxW}" height="74" rx="10" fill="${t.channelBg}" fill-opacity="0.93" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.2"/>
+  <text x="${chBoxX + chBoxW - 18}" y="53" text-anchor="end" fill="${t.channelTitle}" font-family="Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="0.5">${escapeXml(cfg.channel)}</text>
+  <text x="${chBoxX + chBoxW - 18}" y="80" text-anchor="end" fill="${t.channelSub}" font-family="Arial, sans-serif" font-size="15" font-weight="700">${escapeXml(cfg.location)} • ${escapeXml(cfg.time)}</text>
 
-  <!-- Top Right Channel, Location & Time -->
-  <rect x="${width - 332}" y="28" width="300" height="66" rx="8" fill="#090d16" fill-opacity="0.88" stroke="${t.border}" stroke-width="1.5"/>
-  <text x="${width - 46}" y="56" text-anchor="end" fill="${t.secondary}" font-family="Arial, sans-serif" font-size="21" font-weight="900">${escapeXml(cfg.channel)}</text>
-  <text x="${width - 46}" y="82" text-anchor="end" fill="${t.textSub}" font-family="Arial, sans-serif" font-size="15" font-weight="bold">${escapeXml(cfg.location)} • ${escapeXml(cfg.time)}</text>
+  <!-- Breaking News Tag Above Lower Third -->
+  <rect x="${marginX}" y="${tagY}" width="226" height="${tagH}" rx="6" fill="${t.tagBg}"/>
+  <text x="${marginX + 16}" y="${tagY + 26}" fill="${t.tagText}" font-family="Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="0.6">${escapeXml(cfg.badge)}</text>
 
-  <!-- Lower Third Breaking Banner -->
-  <rect x="32" y="${bannerTop}" width="290" height="40" rx="5" fill="${t.primary}"/>
-  <text x="46" y="${bannerTop + 27}" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="900" letter-spacing="1">${escapeXml(cfg.badge)}</text>
-
-  <rect x="32" y="${bannerTop + 44}" width="${width - 64}" height="${lowerHeight - 52}" rx="8" fill="#070c14" fill-opacity="0.92" stroke="${t.border}" stroke-width="2"/>
-  <rect x="32" y="${bannerTop + 44}" width="10" height="${lowerHeight - 52}" fill="${t.secondary}"/>
+  <!-- Main Lower Third Headline Card -->
+  <rect x="${marginX}" y="${boxY}" width="${boxW}" height="${boxH}" rx="10" fill="${t.boxBg}" fill-opacity="0.94" stroke="${t.boxBorder}" stroke-width="2"/>
+  <rect x="${marginX}" y="${boxY}" width="10" height="${boxH}" rx="4" fill="${t.accentBar}"/>
 
   ${headlineSvg}
 
-  <text x="${width - 48}" y="${height - tickerHeight - 14}" text-anchor="end" fill="${t.textSub}" font-family="Arial, sans-serif" font-size="13" font-weight="bold">${escapeXml(BRANDING.developer)}</text>
+  <text x="${marginX + boxW - 18}" y="${boxY + boxH - 14}" text-anchor="end" fill="${t.creditColor}" font-family="Arial, sans-serif" font-size="14" font-weight="700">${escapeXml(BRANDING.developer)}</text>
 
-  <!-- Bottom News Ticker -->
-  <rect x="0" y="${height - tickerHeight}" width="${width}" height="${tickerHeight}" fill="${t.tickerBg}"/>
-  <text x="28" y="${height - Math.round(tickerHeight * 0.33)}" fill="${t.tickerText}" font-family="Arial, sans-serif" font-size="${isVertical ? 23 : 20}" font-weight="900" letter-spacing="0.4">${escapeXml(tickerText)}</text>
+  <!-- Bottom News Ticker Strip -->
+  <rect x="0" y="${height - tickerH}" width="${width}" height="${tickerH}" fill="${t.tickerBg}"/>
+  <text x="24" y="${height - Math.round(tickerH * 0.34)}" fill="${t.tickerText}" font-family="Arial, sans-serif" font-size="${isVertical ? 21 : 18}" font-weight="900" letter-spacing="0.5">${escapeXml(repeatedTicker)}</text>
 </svg>`;
 }
 
@@ -354,22 +392,22 @@ export default async function handler(req, res) {
     };
 
     const presetKey = pick("preset").toLowerCase();
-    const subjectName = (pick("name", "BILAL") || "BILAL").toUpperCase();
+    const subjectName = (pick("name", "FIZAN") || "FIZAN").toUpperCase();
     const chosenPreset = PRESETS[presetKey];
 
     const defaultHeadline = chosenPreset
       ? chosenPreset.headline(subjectName)
-      : "BREAKING NEWS: SECRET PLAN LEAKED LIVE ON AIR!";
+      : `${subjectName} KA NUMBER BAN`;
     const defaultTicker = chosenPreset
       ? chosenPreset.ticker(subjectName)
-      : "SOURCES CONFIRM MAJOR DRAMA IN FRIENDS GROUP • STAY TUNED FOR FULL COVERAGE";
+      : `${subjectName} KA NUMBER BAN • GHUM KA MAHOL • ${subjectName} KA KIRA NIKL GYA`;
 
     const headline = (pick("headline", defaultHeadline) || defaultHeadline).toUpperCase();
     const ticker = (pick("ticker", defaultTicker) || defaultTicker).toUpperCase();
-    const channel = (pick("channel", "NEXGEN NEWS") || "NEXGEN NEWS").toUpperCase();
+    const channel = (pick("channel", "EMPIRE NEWS") || "EMPIRE NEWS").toUpperCase();
     const badge = (pick("badge", "BREAKING NEWS") || "BREAKING NEWS").toUpperCase();
     const liveTag = (pick("live", "LIVE") || "LIVE").toUpperCase();
-    const viewers = pick("viewers", "18.4K") || "18.4K";
+    const viewers = pick("viewers", "1M") || "1M";
     const location = (pick("location", "PAKISTAN") || "PAKISTAN").toUpperCase();
     const time = pick("time") || getPktTimeString();
 
@@ -379,9 +417,7 @@ export default async function handler(req, res) {
     const rawSize = pick("size", "tv").toLowerCase();
     const size = SIZES[rawSize] ? rawSize : "tv";
 
-    const rawFilter = pick("filter", "normal").toLowerCase();
-    const filter = rawFilter === "bw" ? "bw" : "normal";
-
+    const filter = pick("filter", "normal").toLowerCase() === "bw" ? "bw" : "normal";
     const mode = pick("mode", "svg").toLowerCase();
 
     const img1 =
@@ -392,7 +428,7 @@ export default async function handler(req, res) {
       normalizeDataUri(pick("image2Base64")) ||
       (await fetchImageAsDataUri(pick("img2")));
 
-    const cfg = {
+    const svg = buildNewsSvg({
       headline,
       ticker,
       channel,
@@ -406,26 +442,13 @@ export default async function handler(req, res) {
       filter,
       img1,
       img2
-    };
-
-    const svg = buildNewsSvg(cfg);
+    });
 
     if (mode === "json") {
       return res.status(200).json({
         status: "success",
         api: "Breaking News TV Card Generator API",
-        config: {
-          headline: cfg.headline,
-          ticker: cfg.ticker,
-          channel: cfg.channel,
-          badge: cfg.badge,
-          theme: cfg.theme,
-          size: cfg.size,
-          dimensions: SIZES[cfg.size],
-          filter: cfg.filter,
-          has_custom_photo: Boolean(cfg.img1),
-          has_split_vs_photos: Boolean(cfg.img1 && cfg.img2)
-        },
+        config: { headline, ticker, channel, badge, viewers, location, time, theme, size, filter },
         svg_data_uri: `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`,
         branding: BRANDING
       });
