@@ -9,7 +9,7 @@ const USER_AGENT =
 
 const PRESETS = {
   treat: {
-    headline: (name) => `${name} REFUSES TO GIVE TREAT AGAIN!`,
+    headline: (name) => `${name} REFUSES TO GIVE TREAT AGAIN`,
     ticker: (name) => `${name} REFUSES TO GIVE TREAT AGAIN • FRIENDS DEMAND EMERGENCY MEETING • WALLET STILL FULL`
   },
   shadi: {
@@ -32,104 +32,135 @@ const PRESETS = {
 
 const THEMES = {
   classic: {
-    bgTop: "#131c2b",
-    bgBot: "#080c14",
-    liveBg: "#eab308",
-    liveText: "#090d16",
-    viewerBg: "#111622",
-    viewerText: "#f8fafc",
-    channelBg: "#111622",
+    bgTop: "#152033",
+    bgBot: "#070b12",
+    slashMain: "#dc2626",
+    slashHi: "#f8fafc",
+    liveBg: "#dc2626",
+    liveText: "#ffffff",
+    pillBg: "#0f1522",
+    pillBorder: "#475569",
+    pillText: "#f8fafc",
+    channelBg: "#0f1522",
+    channelBorder: "#475569",
     channelTitle: "#ffffff",
     channelSub: "#cbd5e1",
-    tagBg: "#eab308",
-    tagText: "#090d16",
-    boxBg: "#0d111a",
-    boxBorder: "#eab308",
-    accentBar: "#ef4444",
-    headlineColor: "#ffffff",
-    creditColor: "#e2e8f0",
-    tickerBg: "#dc2626",
-    tickerText: "#ffffff"
+    tagBg: "#dc2626",
+    tagText: "#ffffff",
+    cardBg: "#ffffff",
+    cardBorder: "#dc2626",
+    leftBar: "#0f172a",
+    headline: "#090d16",
+    credit: "#475569",
+    tickerBg: "#facc15",
+    tickerText: "#090d16"
   },
   cyber: {
-    bgTop: "#061b15",
-    bgBot: "#030b09",
+    bgTop: "#062119",
+    bgBot: "#030a08",
+    slashMain: "#10b981",
+    slashHi: "#67e8f9",
     liveBg: "#10b981",
     liveText: "#03120c",
-    viewerBg: "#071612",
-    viewerText: "#ecfdf5",
-    channelBg: "#071612",
+    pillBg: "#061612",
+    pillBorder: "#10b981",
+    pillText: "#ecfdf5",
+    channelBg: "#061612",
+    channelBorder: "#10b981",
     channelTitle: "#34d399",
     channelSub: "#a7f3d0",
     tagBg: "#10b981",
     tagText: "#03120c",
-    boxBg: "#06120f",
-    boxBorder: "#10b981",
-    accentBar: "#38bdf8",
-    headlineColor: "#ffffff",
-    creditColor: "#a7f3d0",
-    tickerBg: "#059669",
-    tickerText: "#ffffff"
+    cardBg: "#061310",
+    cardBorder: "#22d3ee",
+    leftBar: "#10b981",
+    headline: "#ffffff",
+    credit: "#67e8f9",
+    tickerBg: "#22d3ee",
+    tickerText: "#03120c"
   },
   alert: {
-    bgTop: "#1f1606",
-    bgBot: "#0b0803",
-    liveBg: "#f59e0b",
-    liveText: "#090d16",
-    viewerBg: "#141008",
-    viewerText: "#fefce8",
-    channelBg: "#141008",
+    bgTop: "#241906",
+    bgBot: "#0a0702",
+    slashMain: "#eab308",
+    slashHi: "#ef4444",
+    liveBg: "#dc2626",
+    liveText: "#ffffff",
+    pillBg: "#151007",
+    pillBorder: "#eab308",
+    pillText: "#fefce8",
+    channelBg: "#151007",
+    channelBorder: "#eab308",
     channelTitle: "#fbbf24",
     channelSub: "#fde68a",
-    tagBg: "#ef4444",
-    tagText: "#ffffff",
-    boxBg: "#120e07",
-    boxBorder: "#f59e0b",
-    accentBar: "#ef4444",
-    headlineColor: "#ffffff",
-    creditColor: "#fde68a",
-    tickerBg: "#b91c1c",
-    tickerText: "#ffffff"
+    tagBg: "#eab308",
+    tagText: "#090d16",
+    cardBg: "#120e07",
+    cardBorder: "#eab308",
+    leftBar: "#ef4444",
+    headline: "#ffffff",
+    credit: "#fde68a",
+    tickerBg: "#facc15",
+    tickerText: "#090d16"
   },
   blue: {
-    bgTop: "#091e3a",
-    bgBot: "#040d1a",
+    bgTop: "#092142",
+    bgBot: "#030a17",
+    slashMain: "#0284c7",
+    slashHi: "#7dd3fc",
     liveBg: "#38bdf8",
     liveText: "#041322",
-    viewerBg: "#091526",
-    viewerText: "#f8fafc",
-    channelBg: "#091526",
-    channelTitle: "#7dd3fc",
-    channelSub: "#bae6fd",
-    tagBg: "#0284c7",
+    pillBg: "#071429",
+    pillBorder: "#38bdf8",
+    pillText: "#f8fafc",
+    channelBg: "#071429",
+    channelBorder: "#38bdf8",
+    channelTitle: "#ffffff",
+    channelSub: "#7dd3fc",
+    tagBg: "#0369a1",
     tagText: "#ffffff",
-    boxBg: "#071120",
-    boxBorder: "#38bdf8",
-    accentBar: "#facc15",
-    headlineColor: "#ffffff",
-    creditColor: "#bae6fd",
-    tickerBg: "#0369a1",
-    tickerText: "#ffffff"
+    cardBg: "#ffffff",
+    cardBorder: "#0284c7",
+    leftBar: "#0f172a",
+    headline: "#090d16",
+    credit: "#334155",
+    tickerBg: "#38bdf8",
+    tickerText: "#041322"
   },
   drama: {
-    bgTop: "#270a24",
-    bgBot: "#0f040e",
+    bgTop: "#2b0a28",
+    bgBot: "#0d030c",
+    slashMain: "#db2777",
+    slashHi: "#f9a8d4",
     liveBg: "#ec4899",
     liveText: "#ffffff",
-    viewerBg: "#170816",
-    viewerText: "#fdf2f8",
-    channelBg: "#170816",
-    channelTitle: "#f472b6",
-    channelSub: "#f5d0fe",
+    pillBg: "#180617",
+    pillBorder: "#ec4899",
+    pillText: "#fdf2f8",
+    channelBg: "#180617",
+    channelBorder: "#ec4899",
+    channelTitle: "#ffffff",
+    channelSub: "#f9a8d4",
     tagBg: "#db2777",
     tagText: "#ffffff",
-    boxBg: "#140713",
-    boxBorder: "#f472b6",
-    accentBar: "#c084fc",
-    headlineColor: "#ffffff",
-    creditColor: "#f5d0fe",
-    tickerBg: "#be185d",
-    tickerText: "#ffffff"
+    cardBg: "#190818",
+    cardBorder: "#f472b6",
+    leftBar: "#ec4899",
+    headline: "#ffffff",
+    credit: "#f5d0fe",
+    tickerBg: "#f9a8d4",
+    tickerText: "#1b041c"
+  }
+};
+
+const THEME_DEFAULTS = {
+  blue: {
+    channel: "NEXGEN WORLD",
+    badge: "EXCLUSIVE REPORT"
+  },
+  drama: {
+    channel: "EMPIRE GOSSIP",
+    badge: "BIGGEST EXPOSE"
   }
 };
 
@@ -159,13 +190,13 @@ function getPktTimeString() {
       }).format(new Date()) + " PKT"
     );
   } catch {
-    return "11:30 AM PKT";
+    return "11:40 AM PKT";
   }
 }
 
 function wrapText(text, maxCharsPerLine, maxLines = 2) {
   const words = String(text || "").trim().split(/\s+/).filter(Boolean);
-  if (words.length === 0) return ["BREAKING NEWS UPDATE"];
+  if (words.length === 0) return ["BREAKING NEWS"];
 
   const lines = [];
   let current = "";
@@ -253,32 +284,34 @@ async function parseJsonBody(req) {
 
 function buildNewsSvg(cfg) {
   const { width, height } = SIZES[cfg.size] || SIZES.tv;
-  const t = THEMES[cfg.theme] || THEMES.classic;
+  const t = THEMES[cfg.theme] || THEMES.blue;
   const isVertical = height > width;
   const isSquare = width === height;
 
-  const tickerH = isVertical ? 64 : 52;
-  const boxH = isVertical ? 190 : isSquare ? 156 : 138;
-  const tagH = 38;
-  const marginX = isVertical ? 36 : 44;
-  const boxW = width - marginX * 2;
-
-  const boxY = height - tickerH - boxH - 22;
-  const tagY = boxY - tagH - 12;
-
-  const maxChars = isVertical ? 24 : isSquare ? 30 : 40;
+  const tickerH = isVertical ? 58 : 44;
+  const maxChars = isVertical ? 22 : isSquare ? 28 : 38;
   const lines = wrapText(cfg.headline, maxChars, 2);
-  const fontSize = isVertical ? 48 : isSquare ? 44 : 46;
-  const lineGap = Math.round(fontSize * 1.18);
-  const textStartY =
+
+  const fontSize = isVertical ? 46 : isSquare ? 42 : 42;
+  const lineGap = Math.round(fontSize * 1.2);
+  const textBlockH = lines.length * lineGap;
+  const cardH = Math.max(isVertical ? 120 : 94, textBlockH + 40);
+  const tagH = 34;
+
+  const marginX = isVertical ? 32 : 36;
+  const cardW = width - marginX * 2;
+  const cardY = height - tickerH - cardH - 14;
+  const tagY = cardY - tagH - 6;
+
+  const firstLineY =
     lines.length === 1
-      ? boxY + Math.round(boxH / 2) + Math.round(fontSize * 0.34)
-      : boxY + Math.round(boxH * 0.44);
+      ? cardY + Math.round(cardH / 2) + Math.round(fontSize * 0.34)
+      : cardY + 32 + Math.round(fontSize * 0.8);
 
   const filterAttr = cfg.filter === "bw" ? `filter="url(#bwFilter)"` : "";
 
   let bgMedia = `
-    <rect x="0" y="0" width="${width}" height="${height}" fill="url(#studioGrad)"/>
+    <rect x="0" y="0" width="${width}" height="${height}" fill="url(#bgGrad)"/>
     <rect x="0" y="0" width="${width}" height="${height}" fill="url(#gridDots)"/>
   `;
 
@@ -289,9 +322,9 @@ function buildNewsSvg(cfg) {
         <image href="${escapeXml(cfg.img1)}" x="0" y="0" width="${halfW}" height="${height}" preserveAspectRatio="xMidYMid slice"/>
         <image href="${escapeXml(cfg.img2)}" x="${halfW}" y="0" width="${width - halfW}" height="${height}" preserveAspectRatio="xMidYMid slice"/>
       </g>
-      <line x1="${halfW}" y1="0" x2="${halfW}" y2="${height}" stroke="${t.boxBorder}" stroke-width="4"/>
-      <circle cx="${halfW}" cy="${Math.round(height * 0.44)}" r="30" fill="${t.accentBar}" stroke="#ffffff" stroke-width="3"/>
-      <text x="${halfW}" y="${Math.round(height * 0.44) + 8}" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="21" font-weight="900">VS</text>
+      <line x1="${halfW}" y1="0" x2="${halfW}" y2="${height}" stroke="${t.slashHi}" stroke-width="3"/>
+      <circle cx="${halfW}" cy="${Math.round(height * 0.43)}" r="26" fill="${t.slashMain}" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="${halfW}" y="${Math.round(height * 0.43) + 7}" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="900">VS</text>
     `;
   } else if (cfg.img1) {
     bgMedia = `
@@ -304,66 +337,69 @@ function buildNewsSvg(cfg) {
   const headlineSvg = lines
     .map(
       (line, idx) =>
-        `<text x="${marginX + 28}" y="${textStartY + idx * lineGap}" fill="${t.headlineColor}" font-family="Arial, Helvetica, sans-serif" font-size="${fontSize}" font-weight="900" letter-spacing="0.4">${escapeXml(line)}</text>`
+        `<text x="${marginX + 24}" y="${firstLineY + idx * lineGap}" fill="${t.headline}" font-family="Arial, Helvetica, sans-serif" font-size="${fontSize}" font-weight="900" letter-spacing="0.3">${escapeXml(line)}</text>`
     )
     .join("\n    ");
 
   const repeatedTicker = `${cfg.ticker} • ${cfg.ticker} • ${cfg.ticker}`;
-  const chBoxW = isVertical ? 320 : 350;
-  const chBoxX = width - chBoxW - 24;
+  const chW = isVertical ? 290 : 320;
+  const chX = width - chW - 20;
+
+  // Broadcast diagonal corner accents (Blue & Drama style)
+  const slashLayer = `
+    <polygon points="0,0 ${Math.round(width * 0.22)},0 ${Math.round(width * 0.08)},${height} 0,${height}" fill="${t.slashMain}" fill-opacity="0.28"/>
+    <polygon points="${Math.round(width * 0.19)},0 ${Math.round(width * 0.21)},0 ${Math.round(width * 0.07)},${height} ${Math.round(width * 0.05)},${height}" fill="${t.slashHi}" fill-opacity="0.7"/>
+    <polygon points="${width},${Math.round(height * 0.15)} ${width},${height} ${Math.round(width * 0.84)},${height}" fill="${t.slashMain}" fill-opacity="0.24"/>
+    <line x1="${Math.round(width * 0.85)}" y1="${height}" x2="${width}" y2="${Math.round(height * 0.18)}" stroke="${t.slashHi}" stroke-opacity="0.65" stroke-width="3"/>
+  `;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="studioGrad" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="${t.bgTop}"/>
       <stop offset="100%" stop-color="${t.bgBot}"/>
     </linearGradient>
-    <pattern id="gridDots" width="32" height="32" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.08"/>
+    <pattern id="gridDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#ffffff" fill-opacity="0.09"/>
     </pattern>
-    <linearGradient id="lowerFade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="62%" stop-color="#04070d" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#04070d" stop-opacity="0.72"/>
-    </linearGradient>
     <filter id="bwFilter">
       <feColorMatrix type="saturate" values="0"/>
     </filter>
   </defs>
 
   ${bgMedia}
-  <rect x="0" y="0" width="${width}" height="${height}" fill="url(#lowerFade)"/>
+  ${slashLayer}
 
   <!-- Top-Left LIVE Pill -->
-  <rect x="24" y="22" width="118" height="44" rx="10" fill="${t.liveBg}"/>
-  <circle cx="48" cy="44" r="7" fill="${t.liveText}"/>
-  <text x="65" y="51" fill="${t.liveText}" font-family="Arial, sans-serif" font-size="21" font-weight="900">${escapeXml(cfg.liveTag)}</text>
+  <rect x="20" y="18" width="112" height="40" rx="8" fill="${t.liveBg}"/>
+  <circle cx="42" cy="38" r="6.5" fill="${t.liveText}"/>
+  <text x="57" y="45" fill="${t.liveText}" font-family="Arial, sans-serif" font-size="19" font-weight="900">${escapeXml(cfg.liveTag)}</text>
 
   <!-- Top-Left Viewers Pill -->
-  <rect x="154" y="22" width="114" height="44" rx="10" fill="${t.viewerBg}" fill-opacity="0.92" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.2"/>
-  <text x="211" y="51" text-anchor="middle" fill="${t.viewerText}" font-family="Arial, sans-serif" font-size="20" font-weight="800">👁 ${escapeXml(cfg.viewers)}</text>
+  <rect x="142" y="18" width="106" height="40" rx="8" fill="${t.pillBg}" fill-opacity="0.92" stroke="${t.pillBorder}" stroke-width="1.2"/>
+  <text x="195" y="45" text-anchor="middle" fill="${t.pillText}" font-family="Arial, sans-serif" font-size="18" font-weight="800">👁 ${escapeXml(cfg.viewers)}</text>
 
-  <!-- Top-Right Channel & Location/Time Box -->
-  <rect x="${chBoxX}" y="22" width="${chBoxW}" height="74" rx="10" fill="${t.channelBg}" fill-opacity="0.93" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.2"/>
-  <text x="${chBoxX + chBoxW - 18}" y="53" text-anchor="end" fill="${t.channelTitle}" font-family="Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="0.5">${escapeXml(cfg.channel)}</text>
-  <text x="${chBoxX + chBoxW - 18}" y="80" text-anchor="end" fill="${t.channelSub}" font-family="Arial, sans-serif" font-size="15" font-weight="700">${escapeXml(cfg.location)} • ${escapeXml(cfg.time)}</text>
+  <!-- Top-Right Channel & Location/Time -->
+  <rect x="${chX}" y="18" width="${chW}" height="68" rx="8" fill="${t.channelBg}" fill-opacity="0.94" stroke="${t.channelBorder}" stroke-width="1.2"/>
+  <text x="${chX + chW - 16}" y="47" text-anchor="end" fill="${t.channelTitle}" font-family="Arial, sans-serif" font-size="21" font-weight="900" letter-spacing="0.4">${escapeXml(cfg.channel)}</text>
+  <text x="${chX + chW - 16}" y="72" text-anchor="end" fill="${t.channelSub}" font-family="Arial, sans-serif" font-size="13.5" font-weight="700">${escapeXml(cfg.location)} • ${escapeXml(cfg.time)}</text>
 
-  <!-- Breaking News Tag Above Lower Third -->
-  <rect x="${marginX}" y="${tagY}" width="226" height="${tagH}" rx="6" fill="${t.tagBg}"/>
-  <text x="${marginX + 16}" y="${tagY + 26}" fill="${t.tagText}" font-family="Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="0.6">${escapeXml(cfg.badge)}</text>
+  <!-- Tag Above Lower Third -->
+  <rect x="${marginX}" y="${tagY}" width="236" height="${tagH}" rx="5" fill="${t.tagBg}"/>
+  <text x="${marginX + 14}" y="${tagY + 23}" fill="${t.tagText}" font-family="Arial, sans-serif" font-size="15.5" font-weight="900" letter-spacing="0.5">${escapeXml(cfg.badge)}</text>
 
-  <!-- Main Lower Third Headline Card -->
-  <rect x="${marginX}" y="${boxY}" width="${boxW}" height="${boxH}" rx="10" fill="${t.boxBg}" fill-opacity="0.94" stroke="${t.boxBorder}" stroke-width="2"/>
-  <rect x="${marginX}" y="${boxY}" width="10" height="${boxH}" rx="4" fill="${t.accentBar}"/>
+  <!-- Lower Third Headline Box -->
+  <rect x="${marginX}" y="${cardY}" width="${cardW}" height="${cardH}" rx="8" fill="${t.cardBg}" fill-opacity="0.97" stroke="${t.cardBorder}" stroke-width="2"/>
+  <rect x="${marginX}" y="${cardY}" width="9" height="${cardH}" rx="3" fill="${t.leftBar}"/>
 
   ${headlineSvg}
 
-  <text x="${marginX + boxW - 18}" y="${boxY + boxH - 14}" text-anchor="end" fill="${t.creditColor}" font-family="Arial, sans-serif" font-size="14" font-weight="700">${escapeXml(BRANDING.developer)}</text>
+  <text x="${marginX + cardW - 14}" y="${cardY + cardH - 10}" text-anchor="end" fill="${t.credit}" font-family="Arial, sans-serif" font-size="12" font-weight="700">${escapeXml(BRANDING.developer)}</text>
 
-  <!-- Bottom News Ticker Strip -->
+  <!-- Bottom News Ticker -->
   <rect x="0" y="${height - tickerH}" width="${width}" height="${tickerH}" fill="${t.tickerBg}"/>
-  <text x="24" y="${height - Math.round(tickerH * 0.34)}" fill="${t.tickerText}" font-family="Arial, sans-serif" font-size="${isVertical ? 21 : 18}" font-weight="900" letter-spacing="0.5">${escapeXml(repeatedTicker)}</text>
+  <text x="20" y="${height - Math.round(tickerH * 0.34)}" fill="${t.tickerText}" font-family="Arial, sans-serif" font-size="${isVertical ? 19 : 16.5}" font-weight="900" letter-spacing="0.4">${escapeXml(repeatedTicker)}</text>
 </svg>`;
 }
 
@@ -391,28 +427,34 @@ export default async function handler(req, res) {
       return (bVal || (qVal !== null ? qVal : "") || fallback).trim();
     };
 
+    const rawTheme = pick("theme", "blue").toLowerCase();
+    const theme = THEMES[rawTheme] ? rawTheme : "blue";
+    const tDef = THEME_DEFAULTS[theme] || {};
+
     const presetKey = pick("preset").toLowerCase();
-    const subjectName = (pick("name", "FIZAN") || "FIZAN").toUpperCase();
+    const subjectName = (pick("name", "BILAL") || "BILAL").toUpperCase();
     const chosenPreset = PRESETS[presetKey];
 
     const defaultHeadline = chosenPreset
       ? chosenPreset.headline(subjectName)
-      : `${subjectName} KA NUMBER BAN`;
+      : theme === "drama"
+        ? "LAST SEEN ON AT 2 AM STILL NO REPLY"
+        : "FINAL EXAM TIMETABLE MOVED UP BY ONE HOUR";
+
     const defaultTicker = chosenPreset
       ? chosenPreset.ticker(subjectName)
-      : `${subjectName} KA NUMBER BAN • GHUM KA MAHOL • ${subjectName} KA KIRA NIKL GYA`;
+      : theme === "drama"
+        ? "SOURCES CONFIRM SEEN STATUS ACTIVE • EXCUSES UNDER INVESTIGATION"
+        : "STUDENTS RUSHING TO LIBRARY • COFFEE SHOPS EXTEND NIGHT HOURS";
 
     const headline = (pick("headline", defaultHeadline) || defaultHeadline).toUpperCase();
     const ticker = (pick("ticker", defaultTicker) || defaultTicker).toUpperCase();
-    const channel = (pick("channel", "EMPIRE NEWS") || "EMPIRE NEWS").toUpperCase();
-    const badge = (pick("badge", "BREAKING NEWS") || "BREAKING NEWS").toUpperCase();
+    const channel = (pick("channel", tDef.channel || "NEXGEN WORLD") || "NEXGEN WORLD").toUpperCase();
+    const badge = (pick("badge", tDef.badge || "EXCLUSIVE REPORT") || "EXCLUSIVE REPORT").toUpperCase();
     const liveTag = (pick("live", "LIVE") || "LIVE").toUpperCase();
-    const viewers = pick("viewers", "1M") || "1M";
+    const viewers = pick("viewers", "18.4K") || "18.4K";
     const location = (pick("location", "PAKISTAN") || "PAKISTAN").toUpperCase();
     const time = pick("time") || getPktTimeString();
-
-    const rawTheme = pick("theme", "classic").toLowerCase();
-    const theme = THEMES[rawTheme] ? rawTheme : "classic";
 
     const rawSize = pick("size", "tv").toLowerCase();
     const size = SIZES[rawSize] ? rawSize : "tv";
